@@ -29,7 +29,6 @@
     <scm>
         <connection>scm:git:https://github.com/duolabmeng6/javaefun.git</connection>
         <developerConnection>scm:git:https://github.com/duolabmeng6/javaefun.git</developerConnection>
-        <tag>HEAD</tag>
         <url>https://github.com/duolabmeng6/javaefun</url>
     </scm>
 
@@ -57,5 +56,16 @@
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
