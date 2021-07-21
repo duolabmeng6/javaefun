@@ -8,6 +8,30 @@
     <artifactId>javaefun</artifactId>
     <version>1.0.0</version>
 
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License</name>
+            <url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>duolabmeng6</id>
+            <name>duolabmeng6</name>
+            <email>1715109585@qq.com</email>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/duolabmeng6/javaefun.git</connection>
+        <developerConnection>scm:git:https://github.com/duolabmeng6/javaefun.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/duolabmeng6/javaefun</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
