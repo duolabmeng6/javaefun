@@ -1,10 +1,10 @@
-package com.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javeefun.core;
 
 import org.junit.Test;
 
 import java.util.List;
 
-import static com.github.duolabmeng6.javeefun.core.文本处理.*;
+import static io.github.duolabmeng6.javeefun.core.文本处理.*;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
