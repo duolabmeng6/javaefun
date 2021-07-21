@@ -10,9 +10,8 @@
 
     <licenses>
         <license>
-            <name>GNU Lesser General Public License</name>
-            <url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
-            <distribution>repo</distribution>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
         </license>
     </licenses>
 
@@ -21,9 +20,11 @@
             <id>duolabmeng6</id>
             <name>duolabmeng6</name>
             <email>1715109585@qq.com</email>
-            <timezone>+8</timezone>
+            <organization>duolabmeng6</organization>
+            <organizationUrl>https://github.com/duolabmeng6/javaefun</organizationUrl>
         </developer>
     </developers>
+
 
     <scm>
         <connection>scm:git:https://github.com/duolabmeng6/javaefun.git</connection>
