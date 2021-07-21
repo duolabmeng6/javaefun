@@ -6,7 +6,7 @@
 
     <groupId>com.github.duolabmeng6.javaefun</groupId>
     <artifactId>javaefun</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <dependencies>
         <dependency>
