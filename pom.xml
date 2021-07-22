@@ -6,7 +6,7 @@
 
     <groupId>io.github.duolabmeng6.javaefun</groupId>
     <artifactId>javaefun</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>javaefun</name>
     <description>为 java 提供强大且易用的中文函数库，完整的封装了易语言核心支持库所有功能，以及易语言中简单易用的函数</description>
