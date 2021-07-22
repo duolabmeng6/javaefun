@@ -66,7 +66,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20</version>
                 <configuration>
-                    <skip>true</skip>
+                    <!-- <skip>true</skip> -->
                 </configuration>
             </plugin>
 
@@ -107,7 +107,7 @@
                     <source>1.7</source>
                     <target>1.7</target>
                     <!-- 略过测试代码的编译，不推荐 -->
-                    <skip>true</skip>
+                    <!-- <skip>true</skip> -->
                 </configuration>
             </plugin>
 
@@ -132,8 +132,8 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <maven.test.skip>true</maven.test.skip>
-        <skipTests>true</skipTests>
+        <!-- <maven.test.skip>true</maven.test.skip>
+        <skipTests>true</skipTests>-->
     </properties>
 
 
