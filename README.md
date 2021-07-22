@@ -22,3 +22,7 @@ https://search.maven.org/artifact/io.github.duolabmeng6.javaefun/javaefun
 ```
 implementation 'io.github.duolabmeng6.javaefun:javaefun:1.0.0'
 ```
+
+# 文档
+
+https://apidoc.gitee.com/duolabmeng666/javaefun
