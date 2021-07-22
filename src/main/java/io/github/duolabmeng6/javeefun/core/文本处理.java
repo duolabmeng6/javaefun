@@ -57,6 +57,9 @@ public class 文本处理 {
         return (int) arr[0];
     }
 
+    public static int 寻找文本(String 被搜寻的文本, String 欲寻找的文本) {
+        return 被搜寻的文本.indexOf(欲寻找的文本, 0);
+    }
 
     public static int 寻找文本(String 被搜寻的文本, String 欲寻找的文本, int 起始搜寻位置) {
         return 被搜寻的文本.indexOf(欲寻找的文本, 起始搜寻位置);
@@ -123,7 +126,13 @@ public class 文本处理 {
     }
 
     public static String 子文本替换(String 欲被替换的文本, String 欲被替换的子文本, String 用作替换的子文本) {
-        return 欲被替换的文本.replaceAll(欲被替换的子文本, 用作替换的子文本);
+        String str;
+//        try {
+            str = 欲被替换的文本.replace(欲被替换的子文本, 用作替换的子文本);
+//        }catch (Exception e){
+//            return 欲被替换的文本;
+//        }
+        return str;
     }
 
     public static String 取重复文本(int 重复次数, String 待重复文本) {
