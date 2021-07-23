@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.time.Duration;
 
+import static io.github.duolabmeng6.javeefun.core.日期时间函数.到时间;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static io.github.duolabmeng6.javeefun.core.日期时间.*;
@@ -64,5 +65,16 @@ public class 日期时间Test {
 
     }
 
+    @Test
+    public void 测试_日期时间2() {
+        日期时间 t = 到时间("2021-01-01 01:01:01");
+        System.out.println("到时间 " + t.到文本());
+        System.out.println("到时间 " + t.到文本("YYYY年MM月DD日 HH时mm分ss秒"));
+        System.out.println("date " + date(t, "Y-m-d H:i:s"));
+        System.out.println("取时间戳 " + t.取时间戳());
+        System.out.println("date " + 到时间(t.取时间戳()).到文本());
+
+
+    }
 
 }

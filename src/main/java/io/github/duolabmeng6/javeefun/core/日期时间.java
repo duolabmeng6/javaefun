@@ -1,27 +1,41 @@
 package io.github.duolabmeng6.javeefun.core;
 
-import java.time.DayOfWeek;
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.WeekFields;
 import java.util.Calendar;
 
+import static io.github.duolabmeng6.javeefun.core.文本处理.*;
 
 public class 日期时间 {
     public LocalDateTime t = null;
 
-    public 日期时间 New(String 时间文本) {
-        if (时间文本=="now"){
+    public 日期时间 创建(String 时间文本, String 时间格式文本) {
+        if (时间文本 == "now") {
             this.t = LocalDateTime.now();
-        }else{
-            this.t = LocalDateTime.parse(时间文本);
+        } else if (时间格式文本 == "时间戳") {
+            this.t = LocalDateTime.ofInstant(Instant.ofEpochSecond(Integer.valueOf(时间文本)), ZoneId.systemDefault());
+        } else {
+            if (时间格式文本 == "") {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+                this.t = LocalDateTime.parse(时间文本, formatter);
+            } else {
+                this.t = LocalDateTime.parse(时间文本);
+            }
         }
         return this;
     }
 
+    public String 到文本(String 时间格式文本) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        if (时间格式文本 != "") {
+            formatter = DateTimeFormatter.ofPattern(时间格式文本);
+        }
+        return this.t.format(formatter).toString();
+    }
+
     public String 到文本() {
-        return this.t.toString();
+        return this.到文本("");
     }
 
     public long 取时间戳() {
@@ -147,9 +161,40 @@ public class 日期时间 {
 
 class 日期时间函数 {
     public static 日期时间 取现行时间() {
-        return new 日期时间().New("now");
+        return new 日期时间().创建("now", "");
     }
+
+    public static 日期时间 Now() {
+        return new 日期时间().创建("now", "");
+    }
+
     public static 日期时间 到时间(String 时间文本) {
-        return new 日期时间().New(时间文本);
+        return new 日期时间().创建(时间文本, "");
     }
+
+    public static 日期时间 到时间(long 时间戳) {
+        return new 日期时间().创建(String.valueOf(时间戳), "时间戳");
+    }
+
+
+    /**
+     * @param 时间文本   丽日 2020-1-1 01:11:11
+     * @param 时间格式文本 例如 yyyy-MM-dd HH:mm:ss
+     * @return
+     */
+    public static 日期时间 到时间(String 时间文本, String 时间格式文本) {
+        return new 日期时间().创建(时间文本, 时间格式文本);
+    }
+
+    public static String date(日期时间 日期时间, String 时间格式文本) {
+        String str = 时间格式文本;
+        str = 子文本替换(str, "Y", String.valueOf(日期时间.取年()));
+        str = 子文本替换(str, "m", String.valueOf(日期时间.取月()));
+        str = 子文本替换(str, "d", String.valueOf(日期时间.取日()));
+        str = 子文本替换(str, "H", String.valueOf(日期时间.取小时()));
+        str = 子文本替换(str, "i", String.valueOf(日期时间.取分钟()));
+        str = 子文本替换(str, "s", String.valueOf(日期时间.取秒()));
+        return str;
+    }
+
 }
