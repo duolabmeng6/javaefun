@@ -14,6 +14,8 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.file.PathUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 
+import javax.swing.filechooser.FileSystemView;
+
 import static io.github.duolabmeng6.javeefun.core.文本处理.*;
 
 
@@ -361,6 +363,15 @@ public class 文件操作 {
     public static String 获取文件后缀名(String 文件路径){
         return FileUtil.getSuffix(文件路径);
     }
+    public static String 获取当前系统的换行分隔符(){
+        return FileUtil.getLineSeparator();
+    }
+    public static String 取桌面目录(){
+       return FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath();
+    }
+
+
+
 
 
 }

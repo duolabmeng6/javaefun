@@ -129,5 +129,10 @@ public class 文件操作Test {
         System.out.println("路径优化" + 路径优化("./javaefun/test\\1.txt"));
 
     }
+    @Test
+    public void 测试3(){
+        System.out.println("123");
+        System.out.println(创建目录("C:\\Users\\Erin\\Desktop/1/1"));
+    }
 
 }

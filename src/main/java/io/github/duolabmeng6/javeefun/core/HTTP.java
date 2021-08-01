@@ -21,7 +21,5 @@ public class HTTP {
     
 
     
-    public static void main(String[] args) {
-        System.out.println(网页_访问_get("https://www.cnblogs.com/lyn20141231/p/12761110.html",1000));
-    }
+
 }
