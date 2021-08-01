@@ -1,5 +1,6 @@
 package io.github.duolabmeng6.javeefun.core;
 
+import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
 
 import java.awt.*;
@@ -31,6 +32,20 @@ public class 随机工具类 {
     }
     public static char 随机获取单个数字(){
         return RandomUtil.randomNumber();
+    }
+    public static String 随机生成UUID(boolean 是否去除横线){
+        if(是否去除横线){
+            return IdUtil.simpleUUID();
+        }else {
+            return IdUtil.randomUUID();
+        }
+    }
+    public static String 随机生成UUID_高效(boolean 是否去除横线){
+        if(是否去除横线){
+            return IdUtil.fastSimpleUUID();
+        }else {
+            return IdUtil.fastUUID();
+        }
     }
 
 
