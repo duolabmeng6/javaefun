@@ -2,6 +2,7 @@ package io.github.duolabmeng6.javeefun.core;
 
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
+import io.github.duolabmeng6.javeefun.util.GuuidUtil;
 
 import java.awt.*;
 import java.util.List;
@@ -48,5 +49,12 @@ public class 随机工具类 {
         }
     }
 
+    public static long 生成订单UUID_雪花算法(){
+        return GuuidUtil.getUUID();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(生成订单UUID_雪花算法());
+    }
 
 }
