@@ -53,8 +53,6 @@ public class 随机工具类 {
         return GuuidUtil.getUUID();
     }
 
-    public static void main(String[] args) {
-        System.out.println(生成订单UUID_雪花算法());
-    }
+
 
 }
