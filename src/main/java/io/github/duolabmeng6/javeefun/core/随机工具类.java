@@ -3,8 +3,6 @@ package io.github.duolabmeng6.javeefun.core;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
 import io.github.duolabmeng6.javeefun.util.GuuidUtil;
-
-import java.awt.*;
 import java.util.List;
 
 public class 随机工具类 {
