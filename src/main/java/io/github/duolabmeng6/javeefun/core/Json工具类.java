@@ -3,7 +3,6 @@ package io.github.duolabmeng6.javeefun.core;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 
-import java.util.Date;
 
 public class Json工具类 {
     public static JSONObject 字符串转json对象(String 字符串){
@@ -19,6 +18,9 @@ public class Json工具类 {
         return JSONUtil.parseObj(obj,是否跳过空值,是否有序);
     }
 
+    public static String json对象转字符串(JSONObject json对象){
+        return json对象.toString();
+    }
     public static String json对象转字符串(JSONObject json对象,boolean 是否格式化){
         if(是否格式化){
             return json对象.toStringPretty();
