@@ -221,14 +221,5 @@ public interface 接口算数运算 {
         return Math.ceil(双精度小数型);
     }
 
-    /**
-     * 获取指定数值的整数部分，舍弃小数部分。
-     *
-     * @param 双精度小数型 需要获取整数部分的数值
-     * @return 整数部分
-     */
-    static int 到整数(Object 双精度小数型) {
-        BigDecimal b = BigDecimal.valueOf(Double.parseDouble(双精度小数型.toString()));
-        return (int) b.setScale(0, RoundingMode.DOWN).doubleValue();
-    }
+
 }
