@@ -1,17 +1,11 @@
 package io.github.duolabmeng6.javaefun.ecore;
 
-import com.github.promeg.pinyinhelper.Pinyin;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
+/**
+ * 接口文本操作包含了一系列文本操作的方法，包括文本的截取、替换、查找、大小写转换、编码转换等。
+ */
 public interface 接口文本操作 {
 
     static int 取文本长度(String 文本数据) {

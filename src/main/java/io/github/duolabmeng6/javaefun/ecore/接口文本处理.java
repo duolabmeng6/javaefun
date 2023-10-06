@@ -11,7 +11,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static io.github.duolabmeng6.javaefun.ecore.接口文本操作.*;
-
+/**
+ * 接口文本处理包含了一系列增强的文本处理方法，包括正则,拼音,随机文本等。
+ */
 public interface 接口文本处理 {
     /**
      * 从文本中获取左边的子字符串。
