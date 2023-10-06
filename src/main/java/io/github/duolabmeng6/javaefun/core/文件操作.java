@@ -15,7 +15,8 @@ import org.apache.commons.io.filefilter.TrueFileFilter;
 
 import javax.swing.filechooser.FileSystemView;
 
-import static io.github.duolabmeng6.javaefun.core.文本处理.*;
+import static io.github.duolabmeng6.javaefun.ecore.接口文本处理.*;
+import static io.github.duolabmeng6.javaefun.ecore.接口文本操作.*;
 
 
 public class 文件操作 {

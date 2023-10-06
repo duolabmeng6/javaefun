@@ -41,11 +41,11 @@ public interface 接口算数运算 {
      * @param 欲取整的小数 需要获取整数部分的小数
      * @return 整数部分，如果小于零则向上取整，如果大于零则向下取整
      */
-    static int 取整(double 双精度小数型) {
-        if (双精度小数型 >= 0) {
-            return (int) Math.floor(双精度小数型);
+    static int 取整(double 欲取整的小数) {
+        if (欲取整的小数 >= 0) {
+            return (int) Math.floor(欲取整的小数);
         } else {
-            return (int) Math.ceil(双精度小数型);
+            return (int) Math.ceil(欲取整的小数);
         }
     }
 

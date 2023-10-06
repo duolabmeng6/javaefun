@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static io.github.duolabmeng6.javaefun.ecore.接口文本处理.*;
+import static io.github.duolabmeng6.javaefun.ecore.接口文本操作.*;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;

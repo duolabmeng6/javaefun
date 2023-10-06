@@ -5,7 +5,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.WeekFields;
 import java.util.Calendar;
 
-import static io.github.duolabmeng6.javaefun.core.文本处理.*;
+import static io.github.duolabmeng6.javaefun.ecore.接口文本处理.*;
+import static io.github.duolabmeng6.javaefun.ecore.接口文本操作.*;
 
 public class 日期时间 {
     public LocalDateTime t = null;
