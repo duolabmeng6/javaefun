@@ -1,8 +1,8 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import org.junit.Test;
 
-import static io.github.duolabmeng6.javeefun.core.算数运算.*;
+import static io.github.duolabmeng6.javaefun.core.算数运算.*;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 

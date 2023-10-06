@@ -1,10 +1,8 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import org.junit.Test;
 
-import java.nio.charset.StandardCharsets;
-
-import static io.github.duolabmeng6.javeefun.core.文件操作.*;
+import static io.github.duolabmeng6.javaefun.core.文件操作.*;
 import static org.junit.Assert.assertEquals;
 
 public class 文件操作Test {

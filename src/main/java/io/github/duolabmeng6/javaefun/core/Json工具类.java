@@ -1,4 +1,4 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;

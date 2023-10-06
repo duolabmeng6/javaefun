@@ -1,4 +1,4 @@
-package io.github.duolabmeng6.javeefun.util;
+package io.github.duolabmeng6.javaefun.util;
 
 import java.util.concurrent.CountDownLatch;
 

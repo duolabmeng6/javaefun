@@ -1,8 +1,8 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
-import io.github.duolabmeng6.javeefun.util.GuuidUtil;
+import io.github.duolabmeng6.javaefun.util.GuuidUtil;
 import java.util.List;
 
 public class 随机工具类 {

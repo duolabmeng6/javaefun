@@ -1,4 +1,4 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,12 +11,11 @@ import java.util.List;
 import cn.hutool.core.io.FileUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.io.file.PathUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 
 import javax.swing.filechooser.FileSystemView;
 
-import static io.github.duolabmeng6.javeefun.core.文本处理.*;
+import static io.github.duolabmeng6.javaefun.core.文本处理.*;
 
 
 public class 文件操作 {

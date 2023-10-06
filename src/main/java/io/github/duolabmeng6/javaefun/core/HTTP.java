@@ -1,7 +1,5 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpUtil;
 
 public class HTTP {

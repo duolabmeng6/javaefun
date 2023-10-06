@@ -1,14 +1,13 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import org.junit.Test;
 
 import java.time.Duration;
 
-import static io.github.duolabmeng6.javeefun.core.日期时间函数.到时间;
+import static io.github.duolabmeng6.javaefun.core.日期时间函数.到时间;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
-import static io.github.duolabmeng6.javeefun.core.日期时间.*;
-import static io.github.duolabmeng6.javeefun.core.日期时间函数.*;
+import static io.github.duolabmeng6.javaefun.core.日期时间函数.*;
 
 
 public class 日期时间Test {

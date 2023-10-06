@@ -1,10 +1,8 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import cn.hutool.core.img.Img;
 import cn.hutool.core.img.ImgUtil;
 import cn.hutool.core.io.FileUtil;
-
-import javax.swing.*;
 
 public class 图片工具 {
     public static void 图片缩放(String 缩放图片,String 保存地址,float 缩放比例){

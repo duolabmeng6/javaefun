@@ -1,16 +1,13 @@
-package io.github.duolabmeng6.javeefun.core;
-
-import cn.hutool.crypto.SecureUtil;
+package io.github.duolabmeng6.javaefun.core;
 
 import javax.crypto.Mac;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import static io.github.duolabmeng6.javeefun.core.编码工具类.byteToHexString;
+import static io.github.duolabmeng6.javaefun.core.编码工具类.byteToHexString;
 
 public class 摘要算法 {
     public static String md5(byte[] 明文){

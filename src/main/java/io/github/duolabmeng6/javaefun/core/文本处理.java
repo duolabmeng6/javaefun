@@ -1,4 +1,4 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 
 import com.github.promeg.pinyinhelper.Pinyin;

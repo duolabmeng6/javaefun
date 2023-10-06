@@ -1,11 +1,11 @@
-package io.github.duolabmeng6.javeefun.core;
+package io.github.duolabmeng6.javaefun.core;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.WeekFields;
 import java.util.Calendar;
 
-import static io.github.duolabmeng6.javeefun.core.文本处理.*;
+import static io.github.duolabmeng6.javaefun.core.文本处理.*;
 
 public class 日期时间 {
     public LocalDateTime t = null;
