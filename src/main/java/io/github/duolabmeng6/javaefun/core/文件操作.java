@@ -337,41 +337,48 @@ public class 文件操作 {
         path = nPath.toString();
         return path;
     }
-    public static boolean 清空文件夹(String 文件夹路径){
+
+    public static boolean 清空文件夹(String 文件夹路径) {
         return FileUtil.clean(文件夹路径);
     }
-    public static boolean 是否为Windows环境(){
+
+    public static boolean 是否为Windows环境() {
         return FileUtil.isWindows();
     }
-    public static String 获取用户路径(){
+
+    public static String 获取用户路径() {
         return FileUtil.getUserHomePath();
     }
-    public static String 清除文件名中的在Windows下不支持的非法字符(String 文件名){
+
+    public static String 清除文件名中的在Windows下不支持的非法字符(String 文件名) {
         //（必须不包括路径，否则路径符将被替换）
         return FileUtil.cleanInvalid(文件名);
     }
-    public static boolean 文件名中是否包含在Windows下不支持的非法字符(String 文件名){
+
+    public static boolean 文件名中是否包含在Windows下不支持的非法字符(String 文件名) {
         //（必须不包括路径，否则路径符将被替换）
         return FileUtil.containsInvalid(文件名);
     }
-    public static String 修复路径(String 路径){
+
+    public static String 修复路径(String 路径) {
         return FileUtil.normalize(路径);
     }
-    public static String 获取文件名(String 文件路径){
+
+    public static String 获取文件名(String 文件路径) {
         return FileUtil.getName(文件路径);
     }
-    public static String 获取文件后缀名(String 文件路径){
+
+    public static String 获取文件后缀名(String 文件路径) {
         return FileUtil.getSuffix(文件路径);
     }
-    public static String 获取当前系统的换行分隔符(){
+
+    public static String 获取当前系统的换行分隔符() {
         return FileUtil.getLineSeparator();
     }
-    public static String 取桌面目录(){
-       return FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath();
+
+    public static String 取桌面目录() {
+        return FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath();
     }
-
-
-
 
 
 }
