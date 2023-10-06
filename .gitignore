@@ -1,3 +1,4 @@
 /.idea
 *.class
 /target
+.DS_Store
