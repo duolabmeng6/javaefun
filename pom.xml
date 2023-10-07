@@ -63,6 +63,12 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>org.ini4j</groupId>
+            <artifactId>ini4j</artifactId>
+            <version>0.5.4</version>
+        </dependency>
+
         <!--糊涂工具包-->
         <dependency>
             <groupId>cn.hutool</groupId>
