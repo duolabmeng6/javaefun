@@ -2,7 +2,8 @@ package io.github.duolabmeng6.javaefun.core;
 
 import org.junit.Test;
 
-import static io.github.duolabmeng6.javaefun.core.文件操作.*;
+import static io.github.duolabmeng6.javaefun.ecore.接口文件操作.*;
+import static io.github.duolabmeng6.javaefun.ecore.接口磁盘操作.*;
 import static org.junit.Assert.assertEquals;
 
 public class 文件操作Test {

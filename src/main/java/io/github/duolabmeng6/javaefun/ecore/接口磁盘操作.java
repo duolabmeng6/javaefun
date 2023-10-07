@@ -151,12 +151,11 @@ public interface 接口磁盘操作 {
     }
 
 
-
     /**
      * 寻找符合条件的文件或目录名称。
      *
      * @param 欲寻找的文件或目录名称 欲寻找的文件或目录名称，支持通配符
-     * @param 欲寻找文件的属性 欲寻找文件的属性，可以省略，默认为搜寻除子目录外的所有文件
+     * @param 欲寻找文件的属性    欲寻找文件的属性，可以省略，默认为搜寻除子目录外的所有文件
      * @return 匹配的文件名或目录名，如果没有匹配的则返回空文本
      */
     public static String 寻找文件(String 欲寻找的文件或目录名称, int 欲寻找文件的属性) {
@@ -209,27 +208,6 @@ public interface 接口磁盘操作 {
         }
     }
 
-
-    static List<String> 文件_枚举(String 欲寻找的目录) {
-        Collection<File> listFiles = FileUtils.listFiles(new File(欲寻找的目录), null, true);
-        List<String> result = new ArrayList<String>();
-        for (File file : listFiles) {
-            result.add(file.getAbsolutePath());
-        }
-        return result;
-    }
-
-    static List<String> 文件_枚举(String 欲寻找的目录, String 过滤扩展名) {
-        String[] arr = 过滤扩展名.split(","); // txt,jpg,jpeg,exe
-
-        Collection<File> listFiles = FileUtils.listFiles(new File(欲寻找的目录), arr, true);
-        List<String> result = new ArrayList<String>();
-        for (File file : listFiles) {
-            result.add(file.getAbsolutePath());
-        }
-        return result;
-    }
-
     /**
      * 获取指定文件的创建或最后修改时间。
      *
@@ -254,7 +232,6 @@ public interface 接口磁盘操作 {
             return "100年1月1日"; // 无权限获取文件时间，返回100年1月1日
         }
     }
-
 
 
     /**
@@ -290,4 +267,16 @@ public interface 接口磁盘操作 {
         }
         return true;
     }
+
+
+    static byte[] 读入文件(String 文件路径) {
+        byte[] data = new byte[0];
+        try {
+            data = FileUtils.readFileToByteArray(new File(文件路径));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
 }
